@@ -1,6 +1,10 @@
 <script lang="ts" setup>
   import type {CartItem} from "~/types/cart";
 
+  definePageMeta({
+    title: '1. All on one page',
+  });
+
   const availableItems = [
     { name: 'Apple', price: 2 },
     { name: 'Banana', price: 3 },

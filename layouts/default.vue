@@ -1,25 +1,28 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { total } = storeToRefs(useCartStore())
+const route = useRoute();
+</script>
 
 <template>
 <!--create a default nuxt layout with a header, left menu and body-->
 
   <div class="flex flex-col w-full h-dvh">
-    <header class="flex justify-between items-center p-4 bg-gray-200">
+    <header class="flex justify-between items-center p-4 bg-gray-200 justify-between">
       <div class="">
-        Header
+        Cart example
       </div>
+
+      <div v-if="total > 0">Cart total: ${{ total }}.00</div>
     </header>
     <div class="grid grid-cols-12 divide-x h-full">
       <div class="col-span-3">
-        <nuxt-link to="/" class="block p-2">All on one page</nuxt-link>
+        <NuxtLink to="/" active-class="active" class="block p-2" >1. All on one page</NuxtLink>
 
-        <nuxt-link to="/components" class="block p-2">With child components</nuxt-link>
+        <NuxtLink to="/components" active-class="active" class="block p-2">2. With child components</NuxtLink>
 
-        <nuxt-link to="/composable" class="block p-2">Child components and composable</nuxt-link>
+        <NuxtLink to="/composable" active-class="active" class="block p-2">3. Child components and composable</NuxtLink>
 
-        <nuxt-link to="/pinia" class="block p-2">With Pinia Store</nuxt-link>
-
-        <nuxt-link to="/another" class="block p-2">Another unrelated route</nuxt-link>
+        <NuxtLink to="/pinia" active-class="active" class="block p-2">4. With Pinia Store</NuxtLink>
       </div>
 
       <div class="col-span-9 p-3">
@@ -29,4 +32,8 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.active {
+  font-weight: bold;
+}
+</style>

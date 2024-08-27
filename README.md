@@ -1,23 +1,35 @@
-# Nuxt 3 Minimal Starter
+# Nuxt / Vue / Pinia tutorial
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## To recreate this project:
 
-## Setup
-
-Make sure to install the dependencies:
+#### 1) run the following commands in terminal:
 
 ```bash
-# npm
+npm i nuxi # install the nuxi cli
+nuxi init # initiate a new nuxi project
+npm i pinia @pinia/nuxt # install pinia
+npx module add tailwindcss #install tailwindcss
+````
+#### 2) add or append this toto nuxt.config.ts
+    
+```typescript
+export default defineNuxtConfig({
+  modules: [
+    '@pinia/nuxt', // adds pinia as a nuxt module
+    '@nuxtjs/tailwindcss' // adds tailwind as a nuxt module
+  ],
+  pinia: {
+    storesDirs: ['./store/**'], // sets up auto-import for pinia stores
+  },
+})
+```
+
+
+## To Use
+Install the project dependencies (eg, what's in package.json):
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -25,51 +37,6 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

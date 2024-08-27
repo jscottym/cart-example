@@ -15,6 +15,8 @@
 
         <nuxt-link to="/components" class="block p-2">With child components</nuxt-link>
 
+        <nuxt-link to="/composable" class="block p-2">Child components and composable</nuxt-link>
+
         <nuxt-link to="/pinia" class="block p-2">With Pinia Store</nuxt-link>
 
         <nuxt-link to="/another" class="block p-2">Another unrelated route</nuxt-link>

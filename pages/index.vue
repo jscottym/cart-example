@@ -34,6 +34,7 @@
 
 <template>
   <div class="flex flex-col gap-2">
+
     <div class="text-xl bold">Here are the available cart items</div>
     <div class="flex flex-col gap-2">
       <div class="ring-1 ring-gray-200 rounded flex items-center gap-2 p-4" v-for="item in availableItems" :key="item.name">

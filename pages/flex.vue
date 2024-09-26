@@ -25,7 +25,8 @@ import { ref } from 'vue';
 .header {
     position: sticky 20px;
     width: 100px;
-  height: 100px;
+    height: 100px;
+    border: 2px solid red;
   
 }
 

@@ -1,5 +1,9 @@
 <script lang="ts" setup>
 
+definePageMeta({
+    layout: 'cart',
+});
+
 const {
   availableItems,
   cartItems,

@@ -3,6 +3,7 @@
 
   definePageMeta({
     title: '1. All on one page',
+    layout: 'cart',
   });
 
   const availableItems = [

@@ -1,8 +1,4 @@
 <script setup lang="ts">
-definePageMeta({
-    layout: 'blank',
-});
-
 import { ref } from 'vue';
 
 </script>
@@ -19,7 +15,7 @@ import { ref } from 'vue';
 
     </div>
   </template>
-  
+
 <style scoped>
 
 .header {
@@ -27,12 +23,12 @@ import { ref } from 'vue';
     width: 100px;
     height: 100px;
     border: 2px solid red;
-  
+
 }
 
 .wrapper {
   display: flex;
-  justify-content: flex-start ;  
+  justify-content: flex-start ;
   align-items: flex-start;
   padding: 20px;
   gap: .5rem;
@@ -41,7 +37,7 @@ import { ref } from 'vue';
 
 }
 
-.box { 
+.box {
   width: 100px;
   height: 100px;
   display: flex;

@@ -1,7 +1,5 @@
 <script setup lang="ts">
-definePageMeta({
-    layout: 'blank',
-});
+//
 </script>
 
 <template>
@@ -13,7 +11,7 @@ definePageMeta({
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam est? Consectetur eaque consequuntur quos quas similique tenetur qui necessitatibus esse repudiandae, omnis libero distinctio magni laboriosam vel recusandae quibusdam?</p>
 
 <div class="box box-1">
-      box1  
+      box1
       <div class="box box-2">box2</div>
       <div class="box box-3">box3</div>
     </div>
@@ -25,10 +23,10 @@ definePageMeta({
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam est? Consectetur eaque consequuntur quos quas similique tenetur qui necessitatibus esse repudiandae, omnis libero distinctio magni laboriosam vel recusandae quibusdam?</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam est? Consectetur eaque consequuntur quos quas similique tenetur qui necessitatibus esse repudiandae, omnis libero distinctio magni laboriosam vel recusandae quibusdam?</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam est? Consectetur eaque consequuntur quos quas similique tenetur qui necessitatibus esse repudiandae, omnis libero distinctio magni laboriosam vel recusandae quibusdam?</p>
-    
+
     <p class=" test gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis earum corporis quod nostrum alias doloremque mollitia qui tenetur saepe dolorem? Alias officia dolor praesentium animi. Impedit aliquam libero molestias necessitatibus?</p>
 
-    
+
 
     <div class="scroll-container">
         <div style="" class="header red">
@@ -47,7 +45,7 @@ definePageMeta({
             <div class="box box-9">box-9</div>
             <div class="box box-10">box-10</div>
         </div>
-        
+
     </div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam est? Consectetur eaque consequuntur quos quas similique tenetur qui necessitatibus esse repudiandae, omnis libero distinctio magni laboriosam vel recusandae quibusdam?</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam est? Consectetur eaque consequuntur quos quas similique tenetur qui necessitatibus esse repudiandae, omnis libero distinctio magni laboriosam vel recusandae quibusdam?</p>

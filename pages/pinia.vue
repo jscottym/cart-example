@@ -2,6 +2,10 @@
 import { storeToRefs } from 'pinia';
 import { useCartStore } from '~/store/useCartStore';
 
+definePageMeta({
+    layout: 'cart',
+});
+
 const { addItemToCart, emptyCart } = useCartStore();
 const { cartItems, total, cartItemsGrouped, availableItems } = storeToRefs(useCartStore());
 </script>

@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     storesDirs: ['./store/**'],
   },
   uiPro: {
-    license: 'DA565E2D-B509-48E6-AD36-BA7E3E33024F'
+    // use env vars
+    license: process.env.UI_PRO_LICENSE,
   }
 })
